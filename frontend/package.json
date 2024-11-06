@@ -1,0 +1,74 @@
+{
+  "name": "bus-booking-frontend",
+  "version": "1.0.0",
+  "description": "Frontend application for Bus Booking App",
+  "main": "index.js",
+  "proxy": "http://localhost:5000",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:prod": "SKIP_PREFLIGHT_CHECK=true DISABLE_ESLINT_PLUGIN=true react-scripts build",
+    "test": "react-scripts test",
+    "lint": "eslint src --ext .js,.jsx",
+    "format": "prettier --write src/**/*.{js,jsx,css}",
+    "eject": "react-scripts eject",
+    "prestart": "npm run lint && npm run format",
+    "postbuild": "echo 'Build completed!'",
+    "clean": "rm -rf build",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "moment": "^2.29.4",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0",
+    "react-scripts": "5.0.1",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-proposal-private-methods": "*",
+    "eslint": "^8.51.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^2.8.8",
+    "source-map-explorer": "^2.5.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "airbnb"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "printWidth": 80
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "bus-booking",
+    "frontend",
+    "web-vitals"
+  ]
+}

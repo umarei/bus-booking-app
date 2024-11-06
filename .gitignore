@@ -1,0 +1,42 @@
+# Node modules
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Docker files
+docker-compose.override.yml
+Dockerfile
+**/Dockerfile
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Coverage directory
+coverage/
+
+# Test output
+jest-test-results.json
+
+# Nginx configuration (if not to be tracked)
+frontend/nginx.conf
